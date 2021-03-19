@@ -29,7 +29,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
       
       - run: |
-          mkdir tapaal && cd tapaal
-          bzr branch lp:tapaal . 
+          bzr branch lp:tapaal
+          cd tapaal
           bzr push git@github.com:TAPAAL/tapaal-gui.git,branch=master --lossy
       
