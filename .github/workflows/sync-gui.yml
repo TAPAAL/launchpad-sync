@@ -38,16 +38,16 @@ jobs:
           bzr push git@github.com:TAPAAL/tapaal-gui.git,branch=master --lossy
 
 
-      - name: Setup SSH verifytapn
-        run: |
-          echo "${{ secrets.SECRET_PRIVATE_DEPLOY_KEY_VERIFYTAPN }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+      #- name: Setup SSH verifytapn
+      #  run: |
+      #    echo "${{ secrets.SECRET_PRIVATE_DEPLOY_KEY_VERIFYTAPN }}" > ~/.ssh/id_rsa
+      #    chmod 600 ~/.ssh/id_rsa
 
-      - name: Sync verifytapn
-        run: |
-          bzr branch lp:verifytapn
-          cd verifytapn 
-          bzr push git@github.com:TAPAAL/verifytapn.git,branch=master --lossy
+      #- name: Sync verifytapn
+      #  run: |
+      #    bzr branch lp:verifytapn
+      #    cd verifytapn 
+      #    bzr push git@github.com:TAPAAL/verifytapn.git,branch=master --lossy
           
         
       - name: Setup SSH verifypn
