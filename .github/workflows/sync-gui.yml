@@ -50,15 +50,15 @@ jobs:
       #    bzr push git@github.com:TAPAAL/verifytapn.git,branch=master --lossy
           
         
-      - name: Setup SSH verifypn
-        run: |
-          echo "${{ secrets.SECRET_PRIVATE_DEPLOY_KEY_VERIFYPN }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+      #- name: Setup SSH verifypn
+      #  run: |
+      #    echo "${{ secrets.SECRET_PRIVATE_DEPLOY_KEY_VERIFYPN }}" > ~/.ssh/id_rsa
+      #    chmod 600 ~/.ssh/id_rsa
           
-      - name: Sync verifypn
-        run: | 
-          bzr branch lp:verifypn
-          cd verifypn
-          bzr push git@github.com:TAPAAL/verifypn.git,branch=master --lossy
+      #- name: Sync verifypn
+      #  run: | 
+      #    bzr branch lp:verifypn
+      #    cd verifypn
+      #    bzr push git@github.com:TAPAAL/verifypn.git,branch=master --lossy
           
       
