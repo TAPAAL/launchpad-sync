@@ -39,7 +39,7 @@ jobs:
 
       - name: Sync tapaal-gui cpn
         run: |
-          bzr branch bzr branch lp:~tapaal-contributor/tapaal/cpn-gui-dev
+          bzr branch lp:~tapaal-contributor/tapaal/cpn-gui-dev
           cd cpn-gui-dev
           bzr push git@github.com:TAPAAL/tapaal-gui.git,branch=cpn-gui-dev --lossy
       #- name: Setup SSH verifytapn
