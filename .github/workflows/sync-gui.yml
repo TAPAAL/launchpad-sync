@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Install Bzr
-      - run: sudo apt install bzr
+      - run: sudo apt install brz
       
       - name: Setup SSH tapaal-gui
         run: |
